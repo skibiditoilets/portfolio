@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <style>
-
         body {
             margin: 0;
             padding: 0;
@@ -20,20 +19,19 @@
             text-align: center;
             font-size: 100px;
             font-family:'Times New Roman', Times, serif;
-            margin-top: 0px; /* Adjust the margin as needed */
+            margin-top: 0px;
             margin-bottom: 0px;
-            background-image: url('https://images.wallpapersden.com/image/download/anime-girl-looking-for-sunset_bmVsZmuUmZqaraWkpJRmbmpnrWZmZ2U.jpg'); /* Replace 'background_image.jpg' with the path to your image */
-            background-size: cover; /* Cover the entire background */
-            background-position: center; /* Center the background image */
+            background-image: url('https://images.wallpapersden.com/image/download/anime-girl-looking-for-sunset_bmVsZmuUmZqaraWkpJRmbmpnrWZmZ2U.jpg');
+            background-size: cover;
+            background-position: center;
             padding: 290px;
             background-size: 100%;
             color: rgba(255, 255, 255);
-        
         }
 
         .fade-in {
             opacity: 0;
-            animation: fadeInTitle 1s forwards; /* Apply the fade-in animation */
+            animation: fadeInTitle 1s forwards;
             color: rgb(255, 255, 255, 0);
             display: inline;
         }
@@ -51,7 +49,7 @@
             text-align: center;
             font-size: 50px;
             font-family: Verdana;
-            margin-top: 0px; /* Adjust the margin as needed */
+            margin-top: 0px;
             padding: 20px;
             opacity: 0;
             animation: fadeIn 4s forwards;
@@ -71,7 +69,7 @@
             text-align: center;
             font-size: 50px;
             font-family: Verdana;
-            margin-top: 0px; /* Adjust the margin as needed */
+            margin-top: 0px;
             padding: 20px;
         }
 
@@ -125,7 +123,6 @@
             width: 95%;
             margin: 0 auto;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
-
         }
 
         h1 {
@@ -193,14 +190,14 @@
         }
         .footer img {
             display: inline-block;
-            max-width: 100px; /* Adjust according to your image size */
+            max-width: 100px; 
             height: auto;
-            vertical-align: middle; /* To align with text */
+            vertical-align: middle; 
         }
         .footer p {
             display: inline-block;
             margin: 0;
-            vertical-align: middle; /* To align with image */
+            vertical-align: middle; 
         }
     </style>
     <meta charset="UTF-8">
@@ -223,7 +220,6 @@
     </div>
 </header>
 
-<!-- Homepage Section -->
 <section id="home">
     <div class="title">
         <h class="fade-in">N</h><h class="fade-in">i</h><h class="fade-in">c</h><h class="fade-in">h</h><h class="fade-in">o</h><h class="fade-in">l</h><h class="fade-in">a</h><h class="fade-in">s</h>
@@ -231,8 +227,7 @@
     </div>
 </section>
 
-<!-- About Me Section -->
-<section id="about" style="display: none;"> <!-- Hide the section initially -->
+<section id="about" style="display: none;">
     <div class="container">
         <div class="about-container">
             <div class="about-image">
@@ -279,15 +274,14 @@
 
         letters.forEach((letter, index) => {
             setTimeout(() => {
-                letter.style.color = "#fff"; // Change text color to white to reveal the letter
-
-            }, (index + 1) * 300); // Delay each letter by 1 second
+                letter.style.color = "#fff";
+            }, (index + 1) * 300);
 
             if (index === letters.length - 1) {
                 setTimeout(() => {
                     const aboutHeading = document.querySelector('.about_heading');
-                    aboutHeading.style.opacity = 1; // Trigger the fade-in animation for the "engineer | programmer" text
-                }, (index + 2) * 10000); // Add additional delay for the "engineer | programmer" text
+                    aboutHeading.style.opacity = 1;
+                }, (index + 2) * 10000);
             }
         });
     });
@@ -297,7 +291,6 @@
     document.addEventListener("DOMContentLoaded", function() {
         const aboutSection = document.getElementById('about');
 
-        // Function to check if an element is in the viewport
         function isInViewport(element) {
             const rect = element.getBoundingClientRect();
             return (
@@ -308,13 +301,12 @@
             );
         }
 
-        // Function to show the "About Me" section when it's within 80% of the viewport height
         function showAboutSection() {
-            const scrollTriggerPosition = window.innerHeight * 0.5; // Adjust this value as needed
+            const scrollTriggerPosition = window.innerHeight * 0.5;
 
             if (aboutSection.getBoundingClientRect().top <= scrollTriggerPosition) {
                 aboutSection.style.display = 'block';
-                window.removeEventListener('scroll', showAboutSection); // Remove the event listener once the section is shown
+                window.removeEventListener('scroll', showAboutSection);
             }
         }
 
@@ -324,4 +316,5 @@
 
 </body>
 </html>
+
 

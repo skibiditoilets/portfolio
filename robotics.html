@@ -22,11 +22,11 @@
             text-align: center;
             font-size: 100px;
             font-family:'Times New Roman', Times, serif;
-            margin-top: 0px; /* Adjust the margin as needed */
+            margin-top: 0px; 
             margin-bottom: 0px;
             background-image: url('https://images.wallpapersden.com/image/download/anime-city-4k-aesthetic_bmZuZ2iUmZqaraWkpJRobmVprWdnaWU.jpg'); /* Replace 'background_image.jpg' with the path to your image */
-            background-size: cover; /* Cover the entire background */
-            background-position: center; /* Center the background image */
+            background-size: cover; 
+            background-position: center; 
             padding: 290px;
             background-size: 100%;
             color: rgba(255, 255, 255);
@@ -34,7 +34,7 @@
 
         .fade-in {
             opacity: 0;
-            animation: fadeInTitle 1s forwards; /* Apply the fade-in animation */
+            animation: fadeInTitle 1s forwards; 
             color: rgb(255, 255, 255, 0);
             display: inline;
         }
@@ -51,7 +51,7 @@
             text-align: center;
             font-size: 50px;
             font-family: Verdana;
-            margin-top: 0px; /* Adjust the margin as needed */
+            margin-top: 0px; 
             padding: 20px;
             opacity: 0;
             animation: fadeIn 4s forwards;
@@ -71,7 +71,7 @@
             text-align: center;
             font-size: 50px;
             font-family: Verdana;
-            margin-top: 0px; /* Adjust the margin as needed */
+            margin-top: 0px;
             padding: 20px;
         }
 
@@ -195,11 +195,11 @@
             text-align: center;
             font-size: 100px;
             font-family:'Times New Roman', Times, serif;
-            margin-top: 0px; /* Adjust the margin as needed */
+            margin-top: 0px; 
             margin-bottom: 0px;
-            background-image: url('https://wallpapercave.com/wp/wp13293242.png'); /* Replace 'background_image.jpg' with the path to your image */
-            background-size: cover; /* Cover the entire background */
-            background-position: center; /* Center the background image */
+            background-image: url('https://wallpapercave.com/wp/wp13293242.png'); 
+            background-size: cover; 
+            background-position: center; 
             padding: 245px;
             background-size: 100%;
             color: rgb(255, 255, 255);
@@ -216,14 +216,14 @@
         }
         .footer img {
             display: inline-block;
-            max-width: 100px; /* Adjust according to your image size */
+            max-width: 100px; 
             height: auto;
-            vertical-align: middle; /* To align with text */
+            vertical-align: middle; 
         }
         .footer p {
             display: inline-block;
             margin: 0;
-            vertical-align: middle; /* To align with image */
+            vertical-align: middle; 
         }
 
 
@@ -231,7 +231,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
 
@@ -313,15 +313,15 @@
     
             letters.forEach((letter, index) => {
                 setTimeout(() => {
-                    letter.style.color = "#fff"; // Change text color to white to reveal the letter
+                    letter.style.color = "#fff"; 
     
-                }, (index + 1) * 200); // Delay each letter by 1 second
+                }, (index + 1) * 200); 
     
                 if (index === letters.length - 1) {
                     setTimeout(() => {
                         const aboutHeading = document.querySelector('.about_heading');
-                        aboutHeading.style.opacity = 1; // Trigger the fade-in animation for the "engineer | programmer" text
-                    }, (index + 2) * 10000); // Add additional delay for the "engineer | programmer" text
+                        aboutHeading.style.opacity = 1; 
+                    }, (index + 2) * 10000); 
                 }
             });
         });
